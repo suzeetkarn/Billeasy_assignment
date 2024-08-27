@@ -11,7 +11,6 @@ const pool = new Pool({
   port: parseInt(process.env.DB_PORT || '5432'),
 })
 
-// Initialize the database schema if necessary
 const initializeSchema = async () => {
   const createUsersTable = `
     CREATE TABLE IF NOT EXISTS users (
@@ -58,7 +57,6 @@ const initializeSchema = async () => {
   }
 }
 
-// Call initializeSchema if running in development mode or when needed
 if (process.env.NODE_ENV === 'development') {
   initializeSchema().catch(console.error)
 }

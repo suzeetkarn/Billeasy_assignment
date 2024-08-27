@@ -1,4 +1,3 @@
-// src/routes/ticketRoutes.ts
 import { Router } from 'express'
 import {
   generateTicket,

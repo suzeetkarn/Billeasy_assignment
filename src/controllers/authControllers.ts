@@ -1,4 +1,3 @@
-// src/controllers/authController.ts
 import { Request, Response } from 'express'
 import bcrypt from 'bcrypt'
 import { findUserByEmail } from '../models/userModel'
